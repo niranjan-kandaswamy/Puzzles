@@ -17,9 +17,9 @@ namespace PuzzlesProj.Puzzles
             Console.WriteLine("This program swaps 2 numbers without using 3rd variable");
 
             Console.WriteLine("Enter positive number x=");
-            string numX = Console.ReadLine();
+            string numX = int.MaxValue.ToString();//Console.ReadLine();
             Console.WriteLine("Enter positive number y=");
-            string numY = Console.ReadLine();
+            string numY = (int.MaxValue - 1).ToString() ; //Console.ReadLine();
             Random r = new Random();
             uint x = 0, y = 0;
             if (uint.TryParse(numX, out x) == false)
